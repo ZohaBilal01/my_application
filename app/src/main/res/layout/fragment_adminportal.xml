@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:id="@+id/RL1AdminMainPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/Green_Pigment"
+                android:id="@+id/toolbar"
+                app:title="Portal-Admin-List"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:elevation="4dp"/>
+
+            <RelativeLayout
+                android:id="@+id/RL2PortalLinear"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_below="@+id/toolbar"
+                android:background="@drawable/greybacklogin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LLadmin_fyp_portal_20"
+                    android:layout_width="390dp"
+                    android:layout_height="73dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@color/Green_Pigment"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/emoji_fyp_portal"
+                        android:layout_width="64dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/admin_emoji_white" />
+
+                    <TextView
+                        android:layout_width="240dp"
+                        android:layout_height="48dp"
+                        android:text="FYP PORTAL 2020"
+                        android:textColor="@color/White"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="316dp"
+                    android:layout_height="241dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="43dp"
+                    android:layout_marginRight="43dp"
+                    android:alpha="0.76"
+                    android:background="@color/White"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:src="@drawable/backlogin"
+                    tools:context="com.example.navigation.MainActivity">
+
+                    <fragment
+
+                        android:id="@+id/fragment_admin_list"
+                        android:name="com.example.navigation.Admin_main_Page"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLSearchProjects3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightBlack"
+                android:layout_below="@+id/RL2PortalLinear">
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/Searchprojectsfooterheading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading1para"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Searchprojectsfooterpara3"
+                    android:layout_below="@id/Searchprojectsfooterheading1"
+                    android:textColor="@color/lightgrey"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading1linkpara3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading1para"
+                    android:text="@string/linktoAboutusSearchProjectsfooter"
+                    />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/Searchprojectsfooterheading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading1linkpara3"
+                    android:text="Solutions"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="24dp"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/SearchProjectsfooterheading2Pages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading2"
+                    android:text="@string/pagesSearchprojectsfooterheading2"
+                    android:layout_marginLeft="24dp"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SearchProjectsfooterheading2Pages"
+                    android:text="Latest News"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/SearchProjectsfooterlinksLatestNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linksLatestNewsSearchProjectsfooter"
+                    android:layout_below="@+id/Searchprojectsfooterheading3"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Contact"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/SearchProjectsfooterlinksLatestNews"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4para"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading4"
+                    android:text="@string/quickcontactparaSearchProjects"
+                    android:textColor="@color/lightgrey"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading4para"
+                    android:text="@string/quickcontactSearchProjects"
+                    android:textColor="@color/lightgrey"
+                    android:paddingLeft="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:layout_below="@+id/Searchprojectsfooterheading4Contact">
+                    <TextView
+                        android:id="@+id/SearchProjectslastline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lastlineSearchProjects"
+
+                        />
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

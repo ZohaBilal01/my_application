@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/RLContactus1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bannerContactus"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:src="@drawable/pagebanner" />
+
+            <TextView
+                android:id="@+id/ContactusPageHeading"
+                android:layout_width="296dp"
+                android:layout_height="63dp"
+                android:layout_alignBottom="@+id/bannerContactus"
+                android:layout_marginBottom="28dp"
+                android:paddingLeft="120dp"
+                android:text="Contact Us"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+            android:id="@+id/RLContactus2map"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@+id/bannerContactus">
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/HeadingContactForm"
+                android:layout_width="370dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/RLContactus2map"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="GET IN TOUCH"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <LinearLayout
+                android:id="@+id/LLContactForm"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_below="@+id/HeadingContactForm"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:text="Your Name*" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ContactPageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="20dp"
+                    app:counterEnabled="true"
+                    app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:text="Phone Number" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ContactPageNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="20dp"
+                    app:counterEnabled="true"
+                    app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:text="Your Email" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ContactPageEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="20dp"
+                    app:counterEnabled="true"
+                    app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:text="Company name/University Name" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ContactPageUniname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="20dp"
+                    app:counterEnabled="true"
+                    app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:text="Subject" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ContactPageSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="20dp"
+                    app:counterEnabled="true"
+                    app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:text="Message" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ContactPageMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="20dp"
+                    app:counterEnabled="true"
+                    app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Message"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:id="@+id/RLContactAddressBOx"
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    android:layout_below="@+id/LLContactForm"
+                    android:background="@color/American_Yellow"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/ContactboxAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:paddingLeft="120dp"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        />
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/ContactPageYellowboxline1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/ContactboxAddress"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:id="@+id/ContactboxComsat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Comsats University Islamabad"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="20dp"
+                        android:layout_below="@+id/ContactPageYellowboxline1"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/White"/>
+
+                    <TextView
+                        android:id="@+id/ContactboxDetail"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ContactboxDetail"
+                        android:layout_below="@+id/ContactboxComsat"
+                        android:paddingLeft="30dp"
+                        android:textColor="@color/lightBlack"
+                        android:textColorLink="@color/lightBlack"/>
+
+                        <View
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/ContactPageYellowboxline2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/ContactboxDetail"
+                        android:background="@android:color/darker_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/RLSearchProjects3Footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightBlack"
+                android:layout_below="@+id/RLContactAddressBOx">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/Searchprojectsfooterheading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading1para"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Searchprojectsfooterpara3"
+                    android:layout_below="@id/Searchprojectsfooterheading1"
+                    android:textColor="@color/lightgrey"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading1linkpara3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading1para"
+                    android:text="@string/linktoAboutusSearchProjectsfooter"
+                    />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/Searchprojectsfooterheading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading1linkpara3"
+                    android:text="Solutions"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="24dp"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/SearchProjectsfooterheading2Pages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading2"
+                    android:text="@string/pagesSearchprojectsfooterheading2"
+                    android:layout_marginLeft="24dp"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SearchProjectsfooterheading2Pages"
+                    android:text="Latest News"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/SearchProjectsfooterlinksLatestNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linksLatestNewsSearchProjectsfooter"
+                    android:layout_below="@+id/Searchprojectsfooterheading3"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Contact"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/SearchProjectsfooterlinksLatestNews"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4para"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading4"
+                    android:text="@string/quickcontactparaSearchProjects"
+                    android:textColor="@color/lightgrey"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading4para"
+                    android:text="@string/quickcontactSearchProjects"
+                    android:textColor="@color/lightgrey"
+                    android:paddingLeft="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:layout_below="@+id/Searchprojectsfooterheading4Contact">
+                    <TextView
+                        android:id="@+id/SearchProjectslastline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lastlineSearchProjects"
+
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Creat Group">
+            <menu>
+                <item
+                    android:id="@+id/student_addproject"
+                    android:title="Add Project" />
+
+                <item
+                    android:id="@+id/student_addmember"
+                    android:title="Add member" />
+                <item
+                    android:id="@+id/student_selectsupervisor"
+                    android:title="Select Supervisor" />
+                <item
+                    android:id="@+id/student_groupreport"
+                    android:title="Group Report" />
+
+            </menu>
+        </item>
+
+        <item
+            android:title="Proposal">
+            <menu>
+                <item
+                    android:id="@+id/student_submitproposal"
+                    android:title="Add Faculty" />
+
+                <item
+                    android:id="@+id/student_report"
+                    android:title="Report" />
+
+            </menu>
+        </item>
+
+        <item
+            android:title="Phase1  ">
+            <menu>
+                <item
+                    android:id="@+id/student_submitphase1"
+                    android:title="Submit Phase1" />
+
+                <item
+                    android:id="@+id/student_submitphase2"
+                    android:title="Submit Phase2"/>
+
+            </menu>
+        </item>
+
+        <item
+            android:title="Grade  ">
+            <menu>
+                <item
+                    android:id="@+id/student_gradereport"
+                    android:title="Grade Report"
+                    />
+            </menu>
+        </item>
+        <item
+            android:title="Chat  ">
+            <menu>
+                <item
+                    android:id="@+id/student_supervisorchat"
+                    android:title="Supervisor Chat"
+                    />
+            </menu>
+        </item>
+
+
+
+    </group>
+</menu>

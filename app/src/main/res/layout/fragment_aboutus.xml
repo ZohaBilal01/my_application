@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/RLAboutus1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bannerAboutus"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:src="@drawable/pagebanner" />
+
+            <TextView
+                android:id="@+id/AboutusPageHeading"
+                android:layout_width="296dp"
+                android:layout_height="63dp"
+                android:layout_alignBottom="@+id/bannerAboutus"
+                android:layout_marginBottom="28dp"
+                android:paddingLeft="120dp"
+                android:text="About Us"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/RLAboutus2"
+                android:layout_width="match_parent"
+                android:layout_height="1800dp"
+                android:layout_below="@id/bannerAboutus"
+                 >
+                <TextView
+                    android:id="@+id/headingAboutpara1"
+                    android:layout_width="401dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="How It Helps Engineers"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Aboutpara1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headingAboutpara1"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/headPara1Aboutus" />
+                <TextView
+                    android:id="@+id/headingAboutpara2"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/Aboutpara1"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="How It Helps Students"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Aboutpara2"
+                    android:layout_width="match_parent"
+                    android:layout_height="411dp"
+                    android:layout_below="@+id/headingAboutpara2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/headPara2Aboutus" />
+
+                <ImageView
+                    android:id="@+id/imageAboutus1"
+                    android:layout_width="401dp"
+                    android:layout_height="854dp"
+                    android:layout_below="@id/Aboutpara2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/aboutus1" />
+
+                <ImageView
+                    android:id="@+id/imageAboutus2Quote"
+                    android:layout_width="match_parent"
+                    android:layout_height="392dp"
+                    android:src="@drawable/quotebg"
+                    android:layout_below="@+id/imageAboutus1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:id="@+id/Aboutus2Quote"
+                    android:layout_width="match_parent"
+                    android:layout_height="392dp"
+                    android:layout_alignBottom="@+id/imageAboutus2Quote"
+                    android:text="@string/Aboutus2Quoteline"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/AboutusTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RLAboutus2"
+                android:text="Board Members"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageAboutusTeam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AboutusTeam"
+                android:src="@drawable/team1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:id="@+id/AboutusTeam1details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageAboutusTeam1"
+                android:text="@string/AboutusTeam1details"
+                android:paddingLeft="25dp"
+                android:textColor="@color/lightBlack"
+                android:textSize="17dp"/>
+
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:id="@+id/imageAboutusTeam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AboutusTeam1details"
+                android:src="@drawable/team2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:id="@+id/AboutusTeam2details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageAboutusTeam2"
+                android:text="@string/AboutusTeam2details"
+                android:paddingLeft="25dp"
+                android:textColor="@color/lightBlack"
+                android:textSize="17dp"/>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageAboutusTeam3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AboutusTeam2details"
+                android:src="@drawable/team3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:id="@+id/AboutusTeam3details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageAboutusTeam3"
+                android:text="@string/AboutusTeam3details"
+                android:paddingLeft="25dp"
+                android:textColor="@color/lightBlack"
+                android:textSize="17dp"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/RLSearchProjects3Footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightBlack"
+                android:layout_below="@+id/AboutusTeam3details">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/Searchprojectsfooterheading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading1para"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Searchprojectsfooterpara3"
+                    android:layout_below="@id/Searchprojectsfooterheading1"
+                    android:textColor="@color/lightgrey"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading1linkpara3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading1para"
+                    android:text="@string/linktoAboutusSearchProjectsfooter"
+                    />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/Searchprojectsfooterheading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading1linkpara3"
+                    android:text="Solutions"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="24dp"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/SearchProjectsfooterheading2Pages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading2"
+                    android:text="@string/pagesSearchprojectsfooterheading2"
+                    android:layout_marginLeft="24dp"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SearchProjectsfooterheading2Pages"
+                    android:text="Latest News"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/SearchProjectsfooterlinksLatestNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linksLatestNewsSearchProjectsfooter"
+                    android:layout_below="@+id/Searchprojectsfooterheading3"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Contact"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/SearchProjectsfooterlinksLatestNews"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4para"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading4"
+                    android:text="@string/quickcontactparaSearchProjects"
+                    android:textColor="@color/lightgrey"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading4para"
+                    android:text="@string/quickcontactSearchProjects"
+                    android:textColor="@color/lightgrey"
+                    android:paddingLeft="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:layout_below="@+id/Searchprojectsfooterheading4Contact">
+                    <TextView
+                        android:id="@+id/SearchProjectslastline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lastlineSearchProjects"
+
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

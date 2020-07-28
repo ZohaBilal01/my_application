@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">FYP Management system</string>
+    
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="logout_popup_message">Select "Logout" below if you are ready to end your current session.</string>
+
+    <string name="fypsentenceHome1">
+        <h2>Choose the right FYP Idea \n @ the Right Place.</h2>
+    </string>
+    <string name="AboutParainHome">
+       Final Year Project (FYP) is an important subject which the student has to take in order to graduate from the university. The Final Year Project is comprised of Phase 1 and phase 2. Students must pass the Phase 1 in order to take the Phase 2. Students who are taking the project have to build a system or application that is related to Information Technology (IT) at the end of the semester to pass.\n \n
+        The FYP Management Portal is meant to help the FYP Committee by reducing the workload, making management of records easier and records are long-lasting. Italso allows the user to produce report easily with the clicks of few buttons located on the screen.
+    </string>
+    <string name="AboutmoreinHome"><a href="about-us.html" class="plain-btn">About More</a></string>
+    <string name="ExpertAdviseHome">
+        <h6><b>Expert Advise</b></h6> \n\n
+                <p>Get the best advise for your FYP and other projects.</p>
+    </string>
+    <string name="DeliverableManagamentHome">
+        <h6><b>Deliverables Management</b></h6> \n\n
+              <p>Manage the deliverables of FYP as per defined in presenation.</p>
+    </string>
+    <string name="OnlineStatusCheckHome">
+        <h6><b>Online Status Check</b></h6> \n\n
+              <p>Check status of on going Fyps and their completion time.</p>
+    </string>
+    <string name="Links01">
+
+        <a href="http://facebook.com/" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com//" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="http://instagram.com/" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+    </string>
+
+
+
+
+    <string name="headPara1Aboutus">Engineers can explore their ideas and get advices from experts. \n They can also get help in expanding their visions and ideas related to any fields.</string>
+    <string name="headPara2Aboutus">
+        <br>Final Year Project (FYP) is an important subject which the student has to take in order to graduate from the university. The Final Year Project is comprised of Phase 1 and phase 2. Students must pass the Phase 1 in order to take the Phase 2. Students who are taking the project have to build a system or application that is related to Information Technology (IT) at the end of the semester to pass. \n</br>
+        <br>The FYP Management Portal is meant to help the FYP Committee byreducing the workload, making management of records easier and records are long-lasting. Italso allows the user to produce report easily with the clicks of few buttons located on the screen.\n</br>
+        Our Self learning project kits help students learn practical software, electronics and mechanical development by providing all necessary materials needed to make it themselves with detailed video tutorials and learning documents in one single kit.It is like nevon projects which provides free projects ideas and innovative concepts to boost student creativity and enthusiasm towards technology.You should use the projects database to view the list of potential Technical Supervisors, request a particular project or suggest your own project to a supervisor of your choice. To log in to the database you need to use your Sussex username and password.
+    </string>
+    <string name="Aboutus2Quoteline">“<b>An investment in knowledge pays the best interest.” </b></string>
+    <string name="AboutusTeam1details">
+        <h><b>Dr. Syed Asad Hussain</b></h>\n
+               Expert\n
+        <a href="tel:#">111-001-007 </a>\n
+        <a href="mailto:#">asadhussain@cuilahore.edu.pk</a>
+    </string>
+    <string name="AboutusTeam2details">
+        <h><b>Mr. Muhammad Mohsin Mehdi</b></h>\n
+        Supervisor\n
+        <a href="tel:#">111-001-007</a>\n
+        <a href="mailto:#">mohsin.mehdi@cuilahore.edu.pk</a>
+    </string>
+    <string name="AboutusTeam3details">
+        <h><b>Mr. Muhammad Junaid Anjum</b></h>\n
+        Co-Supervisor\n
+        <a href="tel:#">111-001-007</a>\n
+        <a href="mailto:#">junaidanjum@cuilahore.edu.pk</a>
+    </string>
+
+
+
+
+    <string name="ContactboxDetail">
+        Raiwnd road, LAhore \n \n
+        T   <a href="tel:">042-5110433</a>\n
+        E   <a href="mailto:">info@FYPPortal.com</a>
+    </string>
+
+
+
+    <string name="searchprojectspara1">Many students ask for final year project (FYP) idea. Here I share some ideas that may not be noval but carries good enough scope for FYP and quality stuff to learn and excel. These are different from routine FYP ideas e.g. library management, shop management, school management etc. I am not available to supervise because I am already occupied with my FYP students. You can work on any idea without my permission, under any supervisor or industry professional (as co-supervisor).Teachers can view the proposals they can accept or reject and give suggestions in comments section.If students proposals were accepted they will able to work on their Phase1, if proposals were rejected they should overcome their issues that was discussed by the supervisor in the comments after Phase1 completion students submit their phase-1 to the head of committee for evaluation and start working on Phase2 after completed their Phase2 they also submit their Phase2 to head of committee for evaluation.\n</string>
+    <string name="pageslinksSearchProjects1">
+        <br>
+            <br><li><a href="https://nevonprojects.com/php-projects-topics-ideas/">Php Projects</a></li>\n</br>
+            <br><li><a href="https://nevonprojects.com/smart-card-biometrics-projects/">Smart Card/ Biometrics</a></li>\n</br>
+            <br><li><a href="https://nevonprojects.com/engineering-projects-2/matlab-based-projects/">Matlab Projects</a></li>\n</br>
+            <br><li><a href="https://nevonprojects.com/artificial-intelligence-projects/">Artificial Intelligence</a></li>\n</br>
+            <br><li><a href="https://nevonprojects.com/latest-data-mining-projects-topics-ideas/">Data Mining</a></li>\n</br>
+            <br><li><a href="https://nevonprojects.com/dot-net-based-projects/">Dotnet Projects</a></li>\n</br>
+            <br><li><a href="https://nevonprojects.com/information-security-projects/">Information Security</a></li>\n</br>
+            <br><li><a href="https://nevonprojects.com/engineering-projects-2/electronics-and-communication-projects/"> Embedded Projects</a></li>\n</br>
+            <br><li><a href="https://nevonprojects.com/project-ideas/android-project-ideas/">Android Projects</a></li>\n</br>
+            <br><li><a href="https://nevonprojects.com/web-based-project-ideas-topics/">Web Based</a></li>\n</br>
+            <br><li> <a href="https://nevonprojects.com/ios-projects/">iOS Projects</a></li>\n</br>
+        </br>
+    </string>
+    <string name="pageslinksSearchProjects2">
+        <br><li><a href="https://nevonprojects.com/android-task-monitoring/">Android Task Monitoring</a></li>\n</br>
+        <br><li><a href="https://nevonprojects.com/image-encryption-using-aes-algorithm/">Image Encryption Using AES Algorithm</a></li>\n</br>
+        <br><li><a href="https://nevonprojects.com/android-local-train-ticketing-project/">Android Local Train Ticketing Project</a></li>\n</br>
+        <br><li><a href="https://nevonprojects.com/fingerprint-voting-system-project-2/">Fingerprint Voting System Project</a></li>\n</br>
+        <br><li><a href="https://nevonprojects.com/android-patient-tracker/">Android Patient Tracker</a></li>\n</br>
+        <br><li><a href="https://nevonprojects.com/canteen-automation-system/">Canteen Automation System</a></li>\n</br>
+        <br><li><a href="https://nevonprojects.com/opinion-mining-for-restaurant-reviews/">Opinion Mining For Restaurant Reviews</a></li>\n</br>
+        <br><li><a href="https://nevonprojects.com/bikers-portal/">Bikers Portal</a></li>\n</br>
+        <br><li><a href="https://nevonprojects.com/diagnostic-center-client-coordination-system/">Diagnostic Centre Client Coordination</a></li>\n</br>
+        <br><li><a href="https://nevonprojects.com/camera-motion-sensing-project/">Camera Motion Sensing Project</a></li>\n</br>
+    </string>
+    <string name="searchprojectspara2">these ideas as your final year project topics or for testing your software skills.
+        Our projects list consists of the best and improvised software engineering project topics
+        available on the internet. This list of software based project ideas has been constantly
+        improvised in order to provide students with the top innovative topics for final year
+        implementations.</string>
+    <string name="Searchprojectsfooterpara3">The FYP is a student-driven learning experience, and it gives you the opportunity to study a topic of your own choosing in depth and at a point when you are reaching academic maturity. A successful FYP combines the skills of acquiring, managing and critically analysing information with those of planning, collating and communicating.</string>
+    <string name="linktoAboutusSearchProjectsfooter"><br><a href="layout/fragment_aboutus.xml">About More</a>\n</br></string>
+    <string name="pagesSearchprojectsfooterheading2">
+        <br><a href="layout/fragment_home.xml">Home</a>\n\n</br>
+        <br><a href="layout/fragment_aboutus.xml">About Us</a>\n\n</br>
+        <br><a href="layout/fragment_contactus.xml">Contact Us</a>\n\n</br>
+        <br><a href="layout/fragment_portal.xml">Portal</a>\n\n</br></string>
+    <string name="linksLatestNewsSearchProjectsfooter">
+        <br><a href="#">Here’s How Advanced Manufacture Is Transforming The Factory</a> - July 20, 2020\n</br>
+        <br><a href="#">Here’s How Advanced Manufacture Is Transforming The Factory</a> - July 20, 2020\n</br>
+    </string>
+    <string name="quickcontactparaSearchProjects">If you want to contact us about any issue, our support available to help you 8am-7pm Monday to Saturday.</string>
+    <string name="quickcontactSearchProjects">
+            <br>Address:COMSATS University Islamabad\n</br>
+            <br>Call: <a href="tel:#">042-4545588</a>\n</br>
+            <br>Email:<a href="mailto:#">info@FYPPortal.com</a></br>
+    </string>
+    <string name="lastlineSearchProjects">\n FYP Management System | 2020. | All Rights Reserved.\n</string>
+</resources>

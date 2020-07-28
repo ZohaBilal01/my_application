@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="350dp">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Popup_leave_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ready To Change?"
+        android:textSize="25dp"/>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:id="@+id/popup_boxline1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Popup_leave_heading"
+        android:background="@android:color/darker_gray"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/Profile_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popup_boxline1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="text"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/Profile_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Profile_Name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/Profile_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Profile_Email"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberPassword"
+        android:paddingLeft="10dp" />
+
+    <View
+
+        android:layout_marginTop="15dp"
+        android:id="@+id/popup_boxline2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Profile_Password"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popup_boxline2"
+        android:layout_marginTop="29dp">
+
+        <Button
+            android:id="@+id/Update_Cancel_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/lightgrey"
+            android:text="Cancel"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/Update_Confirm_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/Green"
+            android:text="Update"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+</RelativeLayout>

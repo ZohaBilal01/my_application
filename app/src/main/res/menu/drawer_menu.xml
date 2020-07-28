@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/Home"
+            android:title="HOME"/>
+        <item android:id="@+id/About_Us"
+            android:title="ABOUT US"/>
+        <item android:id="@+id/Search_Projects"
+            android:title="SEARCH PROJECTS"/>
+        <item android:id="@+id/Contact_Us"
+            android:title="CONTACT US"/>
+        <item
+            android:title="PORTAL">
+            <menu>
+                <item
+                    android:id="@+id/Portal"
+                    android:title="Login" />
+                <item
+                    android:id="@+id/Signup"
+                    android:title="Signup"/>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/admin_add_faculty"
+            android:title="Add Faculty"/>
+        <item
+            android:id="@+id/admin_navlist"
+            android:title="Admin List"/>
+
+        <item
+            android:id="@+id/student_navlist"
+            android:title="Student List"/>
+
+
+    </group>
+</menu>

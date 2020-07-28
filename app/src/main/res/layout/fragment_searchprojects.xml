@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RLSearchProjects1">
+
+        <ImageView
+            android:id="@+id/bannerAboutus"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:src="@drawable/pagebanner" />
+
+        <TextView
+            android:layout_width="381dp"
+            android:layout_height="67dp"
+            android:layout_alignBottom="@+id/bannerAboutus"
+            android:layout_marginBottom="29dp"
+            android:paddingLeft="85dp"
+            android:text="Search Projects"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="603dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/White">
+        <RelativeLayout
+            android:id="@+id/RLSearchProjects2"
+            android:layout_width="match_parent"
+            android:layout_height="603dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@color/White">
+
+            <TextView
+                android:id="@+id/headingSearchProjects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="70dp"
+                android:text="Software Projects Ideas"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/paraSearchProjects1"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headingSearchProjects"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:background="@color/White"
+                android:text="@string/searchprojectspara1" />
+
+            <ImageView
+                android:id="@+id/imageSearchProject1"
+                android:layout_width="348dp"
+                android:layout_height="218dp"
+                android:layout_below="@+id/paraSearchProjects1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginRight="27dp"
+                android:src="@drawable/sp1" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/linksheadingSearchProjects1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageSearchProject1"
+                android:text="Project Domain"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="25dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/linksSearchProjects1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linksheadingSearchProjects1"
+                android:text="@string/pageslinksSearchProjects1"
+                android:paddingLeft="25dp"/>
+
+            <ImageView
+                android:id="@+id/imageSearchProject2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linksSearchProjects1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="53dp"
+                android:src="@drawable/sp2" />
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/linksheadingSearchProjects2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageSearchProject2"
+                android:text="Software Project Ideas and Topics"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="25dp"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/linksSearchProjects2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linksheadingSearchProjects2"
+                android:text="@string/pageslinksSearchProjects2"
+                android:paddingLeft="25dp"/>
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:id="@+id/imageSearchProject3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linksSearchProjects2"
+                android:src="@drawable/sp3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="27dp"
+                android:layout_marginRight="27dp"/>
+            <TextView
+                android:id="@+id/paraSearchProjects2"
+                android:layout_width="372dp"
+                android:layout_height="145dp"
+                android:layout_below="@id/imageSearchProject3"
+                android:background="@color/White"
+                android:text="@string/searchprojectspara2"
+                android:paddingLeft="25dp"/>
+            <RelativeLayout
+                android:id="@+id/RLSearchProjects3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightBlack"
+                android:layout_below="@+id/paraSearchProjects2">
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/Searchprojectsfooterheading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading1para"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Searchprojectsfooterpara3"
+                    android:layout_below="@id/Searchprojectsfooterheading1"
+                    android:textColor="@color/lightgrey"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading1linkpara3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading1para"
+                    android:text="@string/linktoAboutusSearchProjectsfooter"
+                    />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/Searchprojectsfooterheading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading1linkpara3"
+                    android:text="Solutions"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="24dp"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/SearchProjectsfooterheading2Pages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading2"
+                    android:text="@string/pagesSearchprojectsfooterheading2"
+                    android:layout_marginLeft="24dp"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SearchProjectsfooterheading2Pages"
+                    android:text="Latest News"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/SearchProjectsfooterlinksLatestNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linksLatestNewsSearchProjectsfooter"
+                    android:layout_below="@+id/Searchprojectsfooterheading3"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Contact"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/SearchProjectsfooterlinksLatestNews"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4para"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading4"
+                    android:text="@string/quickcontactparaSearchProjects"
+                    android:textColor="@color/lightgrey"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading4para"
+                    android:text="@string/quickcontactSearchProjects"
+                    android:textColor="@color/lightgrey"
+                    android:paddingLeft="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:layout_below="@+id/Searchprojectsfooterheading4Contact">
+                    <TextView
+                        android:id="@+id/SearchProjectslastline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lastlineSearchProjects"
+
+                        />
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:id="@+id/RL1HOCMainPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/Green_Pigment"
+                android:id="@+id/toolbar"
+                app:title="HOC"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:elevation="4dp"/>
+
+            <RelativeLayout
+                android:id="@+id/RL2HOCPortalLinear"
+                android:layout_width="match_parent"
+                android:layout_height="409dp"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/greybacklogin">
+
+                <TextView
+                    android:id="@+id/hoc_supervisorinfo_heading"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Supervisor Account Information"
+                    android:background="@color/Green"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:paddingLeft="60dp"/>
+
+                <LinearLayout
+                    android:id="@+id/LLhoc_phase2dates_table2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hoc_supervisorinfo_heading"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.76"
+                    android:background="@color/White"
+                    android:orientation="horizontal">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TableRow android:background="@color/Green">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Name"
+                                android:textColor="@color/White"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Email"
+                                android:textColor="@color/White"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Contact"
+                                android:textColor="@color/White"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Domain"
+                                android:textColor="@color/White"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Created Date"
+                                android:textColor="@color/White"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <EditText
+                                android:id="@+id/hoc_supervisorname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Name"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/hoc_supervisoremail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Name"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/hoc_supervisorcontact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Delete"
+                                android:textColor="@color/White" />
+                            <EditText
+                                android:id="@+id/hoc_supervisordomain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Delete"
+                                android:textColor="@color/White" />
+                            <EditText
+                                android:id="@+id/hoc_supervisor_CreatedDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Delete"
+                                android:textColor="@color/White" />
+
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLSearchProjects3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightBlack"
+                android:layout_below="@+id/RL2HOCPortalLinear">
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/Searchprojectsfooterheading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading1para"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Searchprojectsfooterpara3"
+                    android:layout_below="@id/Searchprojectsfooterheading1"
+                    android:textColor="@color/lightgrey"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading1linkpara3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading1para"
+                    android:text="@string/linktoAboutusSearchProjectsfooter"
+                    />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/Searchprojectsfooterheading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading1linkpara3"
+                    android:text="Solutions"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="24dp"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/SearchProjectsfooterheading2Pages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading2"
+                    android:text="@string/pagesSearchprojectsfooterheading2"
+                    android:layout_marginLeft="24dp"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SearchProjectsfooterheading2Pages"
+                    android:text="Latest News"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/SearchProjectsfooterlinksLatestNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linksLatestNewsSearchProjectsfooter"
+                    android:layout_below="@+id/Searchprojectsfooterheading3"
+                    android:textColor="@color/White"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Contact"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/SearchProjectsfooterlinksLatestNews"
+                    android:textColor="@color/White"/>
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4para"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading4"
+                    android:text="@string/quickcontactparaSearchProjects"
+                    android:textColor="@color/lightgrey"
+                    />
+                <TextView
+                    android:id="@+id/Searchprojectsfooterheading4Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Searchprojectsfooterheading4para"
+                    android:text="@string/quickcontactSearchProjects"
+                    android:textColor="@color/lightgrey"
+                    android:paddingLeft="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:layout_below="@+id/Searchprojectsfooterheading4Contact">
+                    <TextView
+                        android:id="@+id/SearchProjectslastline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lastlineSearchProjects"
+
+                        />
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

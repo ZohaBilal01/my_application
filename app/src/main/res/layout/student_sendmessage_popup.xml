@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="250dp">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Popup_chat_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message?"
+        android:textSize="25dp"/>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:id="@+id/Msg_popup_boxline1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Popup_chat_message"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/student_popup_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your Message"
+        android:layout_below="@+id/Msg_popup_boxline1"
+        android:textSize="18dp"/>
+
+        <EditText
+        android:id="@+id/student_sendmsgtosupervisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="type yoor message to your supervisor"
+        android:layout_below="@+id/student_popup_message"/>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:id="@+id/popup_boxline2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/student_sendmsgtosupervisor"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/popup_boxline2">
+
+        <Button
+            android:id="@+id/msg_Cancel_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightgrey"
+            android:text="Close"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/msg_Confirmsend_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/Dark_Blue"
+            android:text="Send"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+</RelativeLayout>

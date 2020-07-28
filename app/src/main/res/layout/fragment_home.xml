@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/bannerHome"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:src="@drawable/pagebanner" />
+
+            <TextView
+                android:id="@+id/HomePageHeading"
+                android:layout_width="296dp"
+                android:layout_height="63dp"
+                android:layout_alignBottom="@+id/bannerHome"
+                android:layout_marginBottom="28dp"
+                android:paddingLeft="150dp"
+                android:text="HOME"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageHomeBackground1"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@+id/bannerHome"
+                android:layout_marginTop="4dp"
+                android:alpha=".50"
+                android:background="@drawable/counter1"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageHomeBackground1.1"
+                android:layout_width="match_parent"
+                android:layout_height="353dp"
+                android:layout_alignBottom="@+id/imageHomeBackground1"
+                android:layout_marginBottom="3dp"
+                android:alpha=".50"
+                android:src="@drawable/blackback" />
+
+            <TextView
+                android:id="@+id/fypsentenceHome1"
+                android:layout_width="354dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/bannerHome"
+                android:layout_alignBottom="@+id/imageHomeBackground1"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="264dp"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:text="@string/fypsentenceHome1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/banana_yellow"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewImageSlider"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageHomeBackground1">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1"
+                    app:sliderStartAutoCycle="true" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/LL1Home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CardViewImageSlider"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/AboutheadinginHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT US"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:paddingLeft="25dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/AboutParainHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/AboutheadinginHome"
+                    android:text="@string/AboutParainHome"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/AboutmoreinHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/AboutParainHome"
+                    android:text="@string/AboutmoreinHome"
+                    android:paddingLeft="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL2Home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL1Home"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/globeiconimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:src="@drawable/globeicon"
+                    />
+                <TextView
+                    android:id="@+id/ExpertAdviseTextHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/globeiconimage"
+                    android:text="@string/ExpertAdviseHome"
+                    android:textColor="@color/lightBlack"
+                    android:paddingLeft="20dp"/>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/badgeiconHomeimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:src="@drawable/badgeicon"
+                    android:layout_below="@+id/ExpertAdviseTextHome"/>
+                <TextView
+                    android:id="@+id/DeliverableMgtTextHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DeliverableManagamentHome"
+                    android:layout_below="@+id/badgeiconHomeimage"
+                    android:textColor="@color/lightBlack"
+                    android:paddingLeft="20dp"/>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/truckiconHomeimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:src="@drawable/truck"
+                    android:layout_below="@+id/DeliverableMgtTextHome"
+                    />
+                <TextView
+                    android:id="@+id/StatusCheckTextHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OnlineStatusCheckHome"
+                    android:layout_below="@+id/truckiconHomeimage"
+                    android:paddingLeft="20dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL3Home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/LL2Home">
+            <ImageView
+                android:id="@+id/imageHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/homeabout"
+               />
+              <TextView
+                  android:id="@+id/LatestProjectsHeadingHome"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Latest Projects FYP Summary"
+                  android:layout_below="@+id/imageHome"
+                  android:textStyle="bold"
+                  android:textColor="@color/Green"
+                  android:textSize="25dp"
+                  />
+              <TableLayout
+                  android:id="@+id/Table1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/LatestProjectsHeadingHome"
+                  >
+                  <TableRow>
+                      <TextView
+                          android:text="Group ID"
+                          android:textColor="@color/Green"
+                          android:textStyle="bold"/>
+                      <TextView
+                          android:text="No of Members"
+                          android:textColor="@color/Green"
+                          android:textStyle="bold"/>
+                      <TextView
+                          android:text="Project Title"
+                          android:textColor="@color/Green"
+                          android:textStyle="bold"/>
+
+                      <TextView
+                          android:text="Project description"
+                          android:textColor="@color/Green"
+                          android:textStyle="bold"/>
+                  </TableRow>
+                  <TableRow>
+                      <TextView
+                          android:text="01"
+                          />
+                      <TextView
+                          android:text="Location finding and obstacle detection for blind people"
+                           />
+                      <TextView
+                          android:text="BsSE"
+                          />
+                      <TextView
+                          android:text="@string/Links01"
+                          />
+                  </TableRow>
+              </TableLayout>
+          </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

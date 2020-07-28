@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Add Faculty">
+            <menu>
+                <item
+                    android:id="@+id/admin_addfaculty"
+                    android:title="Add Faculty" />
+
+                <item
+                    android:id="@+id/admin_facultydetails"
+                    android:title="Faculty Details" />
+
+            </menu>
+        </item>
+
+        <item
+            android:title="Add Student">
+            <menu>
+                <item
+                    android:id="@+id/admin_addstudent"
+                    android:title="Add Faculty" />
+
+                <item
+                    android:id="@+id/admin_studentsdetails"
+                    android:title="Student Details" />
+
+            </menu>
+        </item>
+
+        <item
+            android:title="Create Accounts  ">
+            <menu>
+                <item
+                    android:id="@+id/admin_addhoc"
+                    android:title="HOC" />
+
+                <item
+                    android:id="@+id/admin_addsupervisor"
+                    android:title="Supervisor" />
+
+                <item
+                    android:id="@+id/admin_addec"
+                    android:title="Evaluation Committee " />
+
+                <item
+                    android:id="@+id/admin_supervisordetail"
+                    android:title="Supervisor Detail " />
+
+                <item
+                    android:id="@+id/admin_ecdetail"
+                    android:title="EC Detail " />
+
+            </menu>
+        </item>
+
+        <item
+            android:title="Registered Accounts  ">
+            <menu>
+                <item
+                    android:id="@+id/admin_registeredaccount"
+                    android:title="Groups Detail"
+                    />
+            </menu>
+        </item>
+
+
+    </group>
+</menu>
